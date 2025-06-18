@@ -4,13 +4,13 @@ ALTER SESSION SET "_ORACLE_SCRIPT"=true;
 drop user MODEL cascade;
 
 --새로운 사용자 생성
-create user BOARDUSER identified by 123456
+create user SPRINGMEMBER identified by 123456
     default tablespace users
     temporary tablespace temp;
     
     
 -- 권한설정(접속요청, CURD, 관리자 요청)
-grant connect, resource, dba to BOARDUSER;
+grant connect, resource, dba to SPRINGMEMBER;
 
 --테이블 스페이스(데이터베이스 저장될 공간생성)
 CREATE TABLESPACE FIRSTDATA
